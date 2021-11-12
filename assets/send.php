@@ -17,12 +17,12 @@ if(!$conn) { die(" Connection Error "); }
         $mail->isSMTP(); 
         $mail->Host = "smtp.gmail.com";
         $mail->SMTPAuth = true;
-        $mail->Username = "doshisaloni108@gmail.com";                    
-        $mail->Password = "Saloni@1805";
+        $mail->Username = "User@gmail.com";                    
+        $mail->Password = "password";
         $mail->SMTPAuth = "tls";
         $mail->Port = 587;           
         
-        $mail->setFrom("doshisaloni108@gmail.com");
+        $mail->setFrom("User@gmail.com");
 
         $sql = "select * from user where send_mail=1";
         $res = mysqli_query($conn, $sql);
